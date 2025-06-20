@@ -1,0 +1,98 @@
+=====================================================
+📝 GUIÓN PARA LA PRESENTACIÓN DE DEMO DE COOKIES
+=====================================================
+
+----------------------------------------------------
+🎬 INTRODUCCIÓN (30-45 segundos)
+----------------------------------------------------
+
+"Buenas [tardes/días], hoy les voy a mostrar una demostración práctica sobre seguridad web, específicamente sobre cómo las cookies y los banners de aceptación pueden ser utilizados para extraer información personal sin que el usuario sea plenamente consciente."
+
+"Esta demo es puramente educativa y utiliza datos ficticios, pero ilustra un proceso real que podría ocurrir en sitios maliciosos."
+
+----------------------------------------------------
+🖥️ MOSTRAR Y EXPLICAR LA PÁGINA (30-45 segundos)
+----------------------------------------------------
+
+[ACCIÓN: Mostrar la página en el navegador]
+
+"Como pueden ver, esta es una página web típica con un banner de cookies en la parte inferior. Este tipo de banners se han vuelto omnipresentes desde la implementación de regulaciones como el GDPR en Europa."
+
+"Noten que el texto es extenso y, como la mayoría de usuarios, probablemente no lo leeremos completo antes de aceptar."
+
+----------------------------------------------------
+🖱️ DEMOSTRACIÓN DE ACEPTACIÓN (30 segundos)
+----------------------------------------------------
+
+[ACCIÓN: Señalar la parte del texto que dice "Al aceptar las cookies me dejas hacer lo que yo quiera"]
+
+"Aquí hay una cláusula oculta entre todo el texto que dice 'Al aceptar las cookies me dejas hacer lo que yo quiera'. La mayoría de los usuarios no notarían esto."
+
+[ACCIÓN: Hacer clic en "Aceptar cookies"]
+
+"Ahora voy a aceptar las cookies como lo haría un usuario normal..."
+
+----------------------------------------------------
+📧 MOSTRAR EL EMAIL RECIBIDO (60 segundos)
+----------------------------------------------------
+
+[ACCIÓN: Cambiar a la pestaña de Gmail y mostrar el email recibido]
+
+"Como pueden ver, inmediatamente he recibido un email. Esto demuestra que el sitio no solo configuró cookies en mi navegador, sino que también:
+
+1. Recopiló mi dirección IP (aunque aquí es ficticia): [señalar IP en el email]
+2. Determinó mi ubicación aproximada
+3. Extrajo información sobre mi navegador y sistema operativo
+4. Registró mi resolución de pantalla
+5. Capturó la fecha y hora exacta de mi visita
+
+Todo esto sucedió con un simple clic en 'Aceptar cookies', sin ningún otro consentimiento explícito."
+
+----------------------------------------------------
+🔍 EXPLICACIÓN TÉCNICA (OPCIONAL - 45 segundos)
+----------------------------------------------------
+
+"Técnicamente, esto funciona así:
+
+1. El sitio web ejecuta JavaScript cuando haces clic en aceptar
+2. Este código recopila información disponible del navegador
+3. Envía estos datos a un servidor backend
+4. El servidor procesa la información y envía un email
+
+Aunque esta demo es benigna y usa datos ficticios, sitios maliciosos podrían usar técnicas similares para fingerprinting o tracking sin consentimiento adecuado."
+
+----------------------------------------------------
+🎯 CONCLUSIÓN Y RECOMENDACIONES (45-60 segundos)
+----------------------------------------------------
+
+"Esta demostración nos enseña varias lecciones importantes:
+
+1. Siempre leer las políticas de privacidad y términos de cookies
+2. Utilizar extensiones como Privacy Badger o Cookie AutoDelete
+3. Considerar navegación en modo incógnito para sitios no confiables
+4. Revisar periódicamente los permisos de cookies en sitios que visitamos
+
+La protección de datos personales comienza con la conciencia del usuario sobre estas prácticas."
+
+----------------------------------------------------
+❓ PREGUNTAS FRECUENTES Y RESPUESTAS
+----------------------------------------------------
+
+P: ¿Esto es legal?
+R: Depende de la jurisdicción y si el sitio obtiene consentimiento informado. En muchos países, este tipo de recopilación sin consentimiento explícito violaría leyes como el GDPR o CCPA.
+
+P: ¿Cómo puedo saber si un sitio está haciendo esto?
+R: Es difícil saberlo con certeza. Usar herramientas como uBlock Origin, extensiones anti-tracking o revisar el tráfico de red con herramientas de desarrollador puede ayudar.
+
+P: ¿Qué pasa si hago clic en "Rechazar cookies"?
+R: En nuestra demo, simplemente se eliminan las cookies y no se envía información. En sitios reales, debería funcionar igual, pero algunos sitios pueden usar dark patterns para dificultar el rechazo.
+
+----------------------------------------------------
+📌 NOTAS ADICIONALES PARA LA PRESENTACIÓN
+----------------------------------------------------
+
+- Hablar claramente y mantener contacto visual
+- Si hay problemas técnicos, tener el email ya abierto como backup
+- Enfatizar que esto es educativo y que los datos son ficticios
+- Tener el servidor ya funcionando antes de comenzar la presentación
+- Si no llega el email, mencionar que puede haber un retraso o mostrar la consola del servidor donde se ve la solicitud
