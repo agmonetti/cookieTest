@@ -64,7 +64,7 @@ app.post('/send-email', async (req, res) => {
             
             
             <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3 style="color: #333;">Datos" (Ficticios):</h3>
+                <h3 style="color: #333;">Datos (Ficticios):</h3>
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>IP:</strong></td><td style="padding: 8px; border-bottom: 1px solid #ddd;">${ip}</td></tr>
                     <tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Ubicación:</strong></td><td style="padding: 8px; border-bottom: 1px solid #ddd;">${location}</td></tr>

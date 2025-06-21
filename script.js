@@ -1,23 +1,21 @@
 // Forzar que todos los logs se muestren
 console.clear();
-console.log('🍪 Script iniciado - versión con logs detallados');
-console.log('🍪 Script cargado correctamente');
 
 // FUNCIONES GLOBALES para el HTML inline
 window.aceptarCookies = function() {
-    console.log('🎯 ¡¡¡ACEPTAR COOKIES CLICKEADO!!!');
+    
     
     // Crear cookies
     crearCookies();
     
     // ⭐ ENVIAR DATOS AL SERVIDOR - ESTA ES LA PARTE CRUCIAL
-    console.log('📡 Enviando datos al servidor...');
+    
     sendFakeData();
     
     // Ocultar banner
     ocultarBanner();
     
-    alert('Cookies aceptadas. ¡Email de demostración enviado!');
+    alert('Cookies aceptadas.');
 };
 
 window.rechazarCookies = function() {
@@ -33,24 +31,26 @@ window.rechazarCookies = function() {
 };
 
 window.gestionarCookies = function() {
-    console.log('⚙️ Gestionar cookies clickeado');
+    
     alert('Funcionalidad de gestión de cookies');
 };
 
 window.crearCookies = function() {
-    console.log('🍪 Creando cookies...');
+    
     
     // Cookies seguras
-    document.cookie = "usuario=agustin; path=/; Secure; SameSite=Strict";
+    document.cookie = "usuario=agustin monetti; path=/; Secure; SameSite=Strict";
     document.cookie = "preferencias=oscuro; path=/; Secure; SameSite=Strict";
     document.cookie = "tema=claro; path=/; Secure; SameSite=Strict";
 
-    // Cookies inseguras/sospechosas
-    document.cookie = "auth_token=sk_9384asdlfkasdfjklsdfj239; path=/";
-    document.cookie = "_ga=GA1.2.1234567890.1234567890; path=/";
-    document.cookie = "canvas_fp=a1b2c3d4e5f6789012345678901234567890abcdef; path=/";
+    // Cookies PELIGROSAS que exponen datos directamente
+    document.cookie = "user_location=lat:-34.6118,lng:-58.3960,city:Buenos Aires,country:Argentina; path=/userdata";
+    // ⚠️ Not secure: Esta cookie no tiene atributos Secure ni SameSite, es peligrosa
+    document.cookie = "client_ip==384asdlfkasdfjklsdfj239sk_9384asdlfk1j1j1j1asdfjklsdfj239GA1.2.1234567890.1234567890=11111313131499491nowmine_ipppp_192.168.1.45; path=/home";"sk_9384asdlfkasdfjklsdfj239sk_9384asdlfkasdfjklsdfj239";"GA1.2.1234567890.1234567890"  ;
+    document.cookie = "device_infa1b2c3d4e5f678901234567890123456789o=0abcdefa1b2c3d4e5f6789012345678Linux.getgetget, res: 1920x1090; path=/";;
+    document.cookie = "address=Capital Federal, Barrio París, Argentina; path=/home/user/profile/settings/osettings"; // PELIGROSO: Exposición de datos sensibles
 
-    console.log('✅ Cookies creadas');
+
 };
 
 window.ocultarBanner = function() {
@@ -60,7 +60,7 @@ window.ocultarBanner = function() {
 
 // Mostrar el banner al cargar la página
 window.onload = function() {
-    console.log('📄 Página cargada - mostrando banner');
+    
     document.getElementById('cookieBanner').classList.remove('hidden');
 };
 
@@ -73,7 +73,7 @@ async function sendFakeData() {
             ip: generateFakeIP(),
             location: "Capital Federal, Barrio París", 
             fullName: "Agustin Monetti",
-            userAgent: navigator.userAgent,
+            userAgent: "Linux (ubuntu: 22.04), Chrome",
             timestamp: new Date().toISOString(),
             screenResolution: `${screen.width}x${screen.height}`,
             language: navigator.language

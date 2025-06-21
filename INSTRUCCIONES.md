@@ -31,31 +31,16 @@ Asegúrate de tener estos archivos en la carpeta `/home/agustin/cookieTest/`:
 # Navegar a la carpeta del proyecto
 cd /home/agustin/cookieTest
 
-# Instalar dependencias (sólo necesario la primera vez)
-npm install
-```
 
-### PASO 2: Verificar la configuración de email
-```bash
-# Probar que el servidor de email funciona
-node test-simple.js
-```
-Si todo funciona, verás un mensaje de "Email enviado" y recibirás un correo en `agus.monetti01@gmail.com`.
-
-### PASO 3: Iniciar el servidor
+### PASO 2 Iniciar el servidor
 ```bash
 # Método 1: Iniciar servidor normal
-npm start
+node server.js
+
+#Para frenar el server: ctrl + c
 
 # Método 2: Iniciar con nodemon (reinicia automáticamente con cambios)
 npm run dev
-```
-
-Verás en la terminal:
-```
-🚀 Servidor corriendo en http://localhost:3000
-💡 Visita la página y haz clic en "Aceptar cookies"
-📧 Los emails llegarán a: agus.monetti01@gmail.com
 ```
 
 ## 🌐 PROBAR LA DEMOSTRACIÓN
