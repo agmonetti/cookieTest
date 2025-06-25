@@ -39,17 +39,14 @@ window.crearCookies = function() {
     
     
     // Cookies seguras
-    document.cookie = "usuario=agustin monetti; path=/; Secure; SameSite=Strict";
-    document.cookie = "preferencias=oscuro; path=/; Secure; SameSite=Strict";
-    document.cookie = "tema=claro; path=/; Secure; SameSite=Strict";
+    document.cookie = "usuario=agustin monetti; path=/; Secure; ";
+    document.cookie = "preferencias=oscuro; path=/; Secure; ";
+
 
     // Cookies PELIGROSAS que exponen datos directamente
-    document.cookie = "user_location=lat:-34.6118,lng:-58.3960,city:Buenos Aires,country:Argentina; path=/userdata";
-    // ⚠️ Not secure: Esta cookie no tiene atributos Secure ni SameSite, es peligrosa
-    document.cookie = "client_ip==384asdlfkasdfjklsdfj239sk_9384asdlfk1j1j1j1asdfjklsdfj239GA1.2.1234567890.1234567890=11111313131499491nowmine_ipppp_192.168.1.45; path=/home";"sk_9384asdlfkasdfjklsdfj239sk_9384asdlfkasdfjklsdfj239";"GA1.2.1234567890.1234567890"  ;
-    document.cookie = "device_infa1b2c3d4e5f678901234567890123456789o=0abcdefa1b2c3d4e5f6789012345678Linux.getgetget, res: 1920x1090; path=/";;
     document.cookie = "address=Capital Federal, Barrio París, Argentina; path=/home/user/profile/settings/osettings"; // PELIGROSO: Exposición de datos sensibles
-
+    // Cookie PELIGROSA adicional para probar
+    document.cookie = "jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFndXN0aW4gTW9uZXR0aSIsImFkbWluIjp0cnVlfQ.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ; path=/";
 
 };
 
