@@ -4,135 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test de Cookies</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
     <script src="script.js" defer></script>
     <style>
-      body {
-        background: white;
-        min-height: 100vh;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
 
-      }
-      h1 {
-        color: black;
-        margin-top: 40px;
-        font-size: 2.5rem;
-        letter-spacing: 1px;
-        text-decoration: underline;
-        text-underline-offset: 6px;
-      }
-      p {
-        color: #334155;
-        font-size: 2rem;
-        margin-bottom: 30px;
-      }
-      button {
-        background: black;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 15px 32px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        cursor: pointer;
-        box-shadow: 0 4px 16px rgba(99,102,241,0.15);
-        transition: background 0.2s, transform 0.2s;
-      }
-      button:hover {
-        background: rgb(44, 75, 87);
 
-      }
-
-      /* Estilos para el banner de cookies */
-      .cookie-banner {
-        height: 50vh;
-        background: #2d3748;
-        color: white;
-        padding: 20px;
-        box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-        z-index: 1000;
-        position: fixed;
-        margin: 0 auto;
-        bottom: 0;
-        width: 70%;
-      }
-
-      .cookie-banner p {
-        margin: 0 0 15px 0;
-        color: white;
-        font-size: 1rem;
-        line-height: 1.3;
-        text-align: justify;
-      }
-
-      .cookie-banner span {
-        transition: background-color 0.3s ease;
-        padding: 2px 4px;
-        border-radius: 3px;
-      }
-
-      .cookie-banner span:hover {
-        background-color: #e53e3e;
-        cursor: pointer;
-      }
-
-      .cookie-buttons {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 100px;
-      }
-
-      .cookie-banner button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        border-radius: 3px;
-        font-weight: 500;
-      }
-
-      .accept-btn {
-        background: #10b981;
-        flex: 2;
-        min-width: 100px;
-      }
-
-      .accept-btn:hover {
-        background: #059669;
-      }
-
-      .reject-btn  {
-        background: #ef4444;
-        flex: 1;
-        min-width: 60px;
-      }
-
-      .reject-btn:hover {
-        background: #dc2626;
-      }
-
-      .btn-manage {
-        background: #6b7280;
-        flex: 1;
-        min-width: 60px;
-      }
-
-      .btn-manage:hover {
-        background: #4b5563;
-      }
-
-      .hidden {
-        display: none;
-      }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Test de Cookies</h1>
-        <p>Test para generar cookies normales y sospechosas:</p>
+      <h1>Blog: Peliculas que no debes perderte este 2025</h1>
+    <div class="blog-layout">
+        <main class="blog-main">
+            <article class="blog-post">
+                <h2>1. Dune: Part Three - El épico final de la saga</h2>
+                <div class="post-meta">
+                    <span class="date">15 de marzo, 2025</span>
+                    <span class="category">Ciencia Ficción</span>
+                </div>
+                <p>Denis Villeneuve cierra su trilogía de Dune con una obra maestra visual que lleva la narrativa de Frank Herbert a nuevas alturas cinematográficas. La película promete explorar los últimos capítulos de la historia de Paul Atreides mientras el universo se prepara para cambios épicos que definirán el futuro de la humanidad.</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>2. Avatar: The Seed Bearer - Regreso a Pandora</h2>
+                <div class="post-meta">
+                    <span class="date">8 de mayo, 2025</span>
+                    <span class="category">Aventura/Sci-Fi</span>
+                </div>
+                <p>James Cameron nos lleva de vuelta a Pandora en esta tercera entrega que promete revolucionar una vez más la tecnología cinematográfica. La historia explora nuevos territorios del planeta mientras Jake Sully y su familia enfrentan amenazas que pondrán a prueba todos sus vínculos con la naturaleza de Pandora.</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>3. The Batman: Court of Owls - Gotham más oscuro que nunca</h2>
+                <div class="post-meta">
+                    <span class="date">20 de junio, 2025</span>
+                    <span class="category">Acción/Thriller</span>
+                </div>
+                <p>Matt Reeves continúa su visión noir de Batman enfrentándose a la misteriosa Corte de los Búhos. Robert Pattinson regresa con una interpretación aún más madura del Caballero Oscuro, mientras Gotham se sumerge en conspiraciones que han permanecido ocultas durante décadas en las sombras de la ciudad.</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>4. Fantastic Four: First Steps - Marvel reimagina a la Primera Familia</h2>
+                <div class="post-meta">
+                    <span class="date">2 de agosto, 2025</span>
+                    <span class="category">Superhéroes</span>
+                </div>
+                <p>Marvel Studios presenta su versión de los Cuatro Fantásticos con un enfoque retro-futurista que promete capturar la esencia de aventura y familia que define a estos icónicos héroes. La película equilibra perfectamente la ciencia ficción con el drama familiar, creando una experiencia cinematográfica única en el UCM.</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>5. Blade Runner 2099 - El futuro del futuro</h2>
+                <div class="post-meta">
+                    <span class="date">12 de noviembre, 2025</span>
+                    <span class="category">Ciencia Ficción/Neo-noir</span>
+                </div>
+                <p>Ridley Scott regresa al universo que creó con una nueva historia que explora la humanidad en un futuro aún más distante. En 2099, la línea entre humanos y replicantes se difumina completamente, planteando preguntas filosóficas profundas sobre la identidad, la memoria y lo que realmente significa ser humano.</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+        </main>
+
+        <aside class="blog-sidebar">
+            <div class="sidebar-widget">
+                <h3>🎬 Próximos Estrenos</h3>
+                <ul class="movie-list">
+                    <li><span class="movie-date">Jul 15</span> - Mission: Impossible 8</li>
+                    <li><span class="movie-date">Sep 22</span> - Spider-Man 4</li>
+                    <li><span class="movie-date">Oct 10</span> - John Wick 5</li>
+                    <li><span class="movie-date">Dec 18</span> - Star Wars: New Dawn</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Más Popular</h3>
+                <div class="popular-posts">
+                    <div class="popular-item">
+                        <h4>Top 10 películas de superhéroes 2025</h4>
+                        <span class="popular-views">2.1k views</span>
+                    </div>
+                    <div class="popular-item">
+                        <h4>¿Vale la pena Dune Part Three?</h4>
+                        <span class="popular-views">1.8k views</span>
+                    </div>
+                    <div class="popular-item">
+                        <h4>Análisis: El futuro del cine</h4>
+                        <span class="popular-views">1.5k views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Categorías</h3>
+                <div class="categories">
+                    <span class="category-tag">Ciencia Ficción</span>
+                    <span class="category-tag">Superhéroes</span>
+                    <span class="category-tag">Acción</span>
+                    <span class="category-tag">Thriller</span>
+                    <span class="category-tag">Aventura</span>
+                    <span class="category-tag">Drama</span>
+                </div>
+            </div>
+
+        </aside>
     </div>
+</div>
+// ...existing code...
 
     <!-- Banner de cookies -->
     <div id="cookieBanner" class="cookie-banner">
