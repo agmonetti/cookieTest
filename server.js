@@ -88,7 +88,7 @@ app.post('/send-email', async (req, res) => {
 
     console.log('📮 Intentando enviar email...');
     console.log('From:', EMAIL_USER);
-    console.log('To: agus.monetti01@gmail.com');
+    console.log('To: -');
 
     try {
         console.log('⏳ Llamando a transporter.sendMail...');
