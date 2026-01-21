@@ -13,8 +13,6 @@ Este proyecto es una **demostración educativa** que muestra cómo las cookies m
 
 **NO debe usarse con fines maliciosos o en sitios web de producción sin consentimiento explícito.**
 
-o
-
 ## Tecnologías
 
 - **Frontend**: HTML5, CSS3, JavaScript vanilla
