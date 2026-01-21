@@ -1,115 +1,82 @@
-# 🍪 DEMO DE COOKIES - GUÍA COMPLETA
+# 🍪 Cookie Test - Demostración de Cookies Maliciosas
 
-## 📋 PREPARACIÓN PREVIA
+## Descripción
 
-### 1. Verificar requisitos
-```bash
-# Comprobar versión de Node.js (debe ser 14.x o superior)
-node --version
+Este proyecto es una **demostración educativa** que muestra cómo las cookies maliciosas pueden recopilar información del usuario sin su consentimiento informado real. Simula un blog de películas legítimo con un banner de cookies que, al ser aceptado, recopila y envía datos del usuario.
 
-# Comprobar que npm está instalado
-npm --version
+## Advertencia
 
-# Comprobar que no hay otro proceso usando el puerto 3000
-lsof -i :3000
-```
+**Este proyecto es solo con fines educativos. ** El objetivo es concientizar sobre: 
+- Los riesgos de privacidad en sitios web
+- La importancia de leer las políticas de cookies
+- Cómo los datos personales pueden ser recopilados sin conocimiento pleno del usuario
 
-### 2. Verificar archivos del proyecto
-Asegúrate de tener estos archivos en la carpeta `/home/agustin/cookieTest/`:
-- `package.json` - Dependencias y scripts
-- `server.js` - Servidor Express y lógica de emails
-- `index.html` - Página web con banner de cookies
-- `styles.css` - Estilos de la página
-- `script.js` - Funciones JavaScript del cliente
-- `test-email.js` - Script para probar el envío de emails
-- `test-simple.js` - Versión simplificada del test de email
+**NO debe usarse con fines maliciosos o en sitios web de producción sin consentimiento explícito.**
 
-## 🚀 EJECUCIÓN DEL SERVIDOR
+o
 
-### PASO 1: Preparar el entorno
-```bash
-# Navegar a la carpeta del proyecto
-cd /home/agustin/cookieTest
+## Tecnologías
 
+- **Frontend**: HTML5, CSS3, JavaScript vanilla
+- **Backend**: Node.js + Express
+- **Email**:  Nodemailer (Gmail)
 
-### PASO 2 Iniciar el servidor
-```bash
-# Método 1: Iniciar servidor normal
-node server.js
-
-#Para frenar el server: ctrl + c
-
-# Método 2: Iniciar con nodemon (reinicia automáticamente con cambios)
-npm run dev
-```
-
-## 🌐 PROBAR LA DEMOSTRACIÓN
-
-### Paso 1: Abrir el navegador
-- Accede a: `http://localhost:3000`
-- Verás una página con título "Test de Cookies" y un banner de cookies en la parte inferior
-
-### Paso 2: Interactuar con el banner
-- Haz clic en "Aceptar cookies"
-- Recibirás una notificación de que las cookies han sido aceptadas
-- Se enviará automáticamente un email a `agus.monetti01@gmail.com`
-
-### Paso 3: Verificar el email
-- Revisa la bandeja de entrada de `agus.monetti01@gmail.com`
-- Deberías recibir un email con asunto "Cookie aceptada"
-- El email contendrá datos "robados" simulados (IP, ubicación, etc.)
-
-## 🔄 REINICIAR LA DEMOSTRACIÓN
-
-Para mostrar el banner de cookies nuevamente:
+## Instalación
 
 ```bash
-# Opción 1: Borrar cookies desde el navegador
-# Abre DevTools (F12) → Application → Cookies → Eliminar cookies de localhost
+# Clonar el repositorio
+git clone https://github.com/agmonetti/cookieTest.git
 
-# Opción 2: Usar navegación privada/incógnito
-# Abre una ventana de incógnito y accede a http://localhost:3000
-
-# Opción 3: Usar otro navegador
-# Si usaste Chrome, prueba con Firefox o Edge
-```
-
-## 🛠️ SOLUCIÓN DE PROBLEMAS
-
-### Error: "Port 3000 is already in use"
-```bash
-# Identificar y terminar el proceso que usa el puerto 3000
-lsof -i :3000
-kill -9 [PID]
-
-# Alternativa: usar otro puerto
-PORT=3001 npm start
-```
-
-### Error: "Cannot send mail" o no llega el email
-```bash
-# 1. Verifica la conexión a internet
-ping google.com
-
-# 2. Prueba el envío de email directamente
-node test-email.js
-
-# 3. Verifica las credenciales en server.js (EMAIL_USER y EMAIL_PASS)
-
-# 4. Revisa carpeta de spam en tu correo
-```
-
-### Error: "Cannot find module 'xyz'"
-```bash
-# Reinstalar dependencias
-rm -rf node_modules
+# Instalar dependencias
 npm install
+
+# Configurar credenciales de email en server.js
+# Editar EMAIL_USER y EMAIL_PASS con tus credenciales
+
+# Ejecutar el servidor
+node server.js
 ```
 
-## 📋 CHECKLIST PARA LA PRESENTACIÓN
+## Uso
 
-- [ ] Ejecutar `npm start` y verificar que el servidor inicia correctamente
-- [ ] Abrir `http://localhost:3000` y comprobar que se carga la página
-- [ ] Tener Gmail abierto en otra pestaña para ver el email cuando llegue
-- [ ] Practicar una vez el script de presentación completo
-- [ ] Tener a mano el archivo demo-script.txt para consulta rápida
+1. Abre tu navegador en `http://localhost:3000`
+2. Verás un blog de películas con un banner de cookies
+3. Al hacer clic en "Aceptar cookies", se recopilan los siguientes datos:
+   - IP simulada
+   - Ubicación ficticia
+   - Nombre generado aleatoriamente
+   - User Agent del navegador
+   - Resolución de pantalla
+   - Idioma del navegador
+   - Timestamp
+
+4. Los datos se envían automáticamente por email
+
+## 🔍 Datos Recopilados
+
+La demostración recopila:
+- **IP**:  Dirección IP simulada
+- **Ubicación**:  Ciudad y país ficticios
+- **Nombre**:  Nombre completo generado aleatoriamente
+- **Navegador**: User Agent real del navegador
+- **Resolución**: Dimensiones de la pantalla
+- **Idioma**: Idioma configurado en el navegador
+- **Fecha y hora**: Timestamp del momento de aceptación
+
+## 📁 Estructura del Proyecto
+
+```
+cookieTest/
+├── index.html          # Página principal (blog de películas)
+├── estilos.css         # Estilos del sitio
+├── script.js           # Lógica del cliente (recopilación de datos)
+├── server.js           # Servidor Express y envío de emails
+├── package.json        # Dependencias del proyecto
+└── INSTRUCCIONES.md    # Instrucciones adicionales
+```
+
+
+
+## Autor
+
+[@agmonetti](https://github.com/agmonetti)
