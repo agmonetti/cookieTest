@@ -6,8 +6,8 @@ const app = express();
 const PORT = 3000;
 
 // IMPORTANTE: Tu configuración de email
-const EMAIL_USER = 'tpseguridad.prueba@gmail.com';
-const EMAIL_PASS = 'qmwu rxem wiwz tbnf';
+const EMAIL_USER = '-';
+const EMAIL_PASS = '-';
 
 console.log('🔧 Configurando servidor...');
 console.log('📧 Email configurado:', EMAIL_USER);
